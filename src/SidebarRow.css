@@ -1,0 +1,44 @@
+.sidebarRow{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* border: solid 1px black; */
+}
+
+.sidebarRow__icon{
+    color: #606060;
+    font-size: 24px   !important;
+}
+
+.sidebarRow__title{   
+    flex: 1;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.sidebarRow:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sidebarRow:hover > .sidebarRow__icon{
+    color: red;
+}
+
+/* .sidebarRow:hover > .sidebarRow__title{
+    font-weight: bold;
+} */
+
+.sidebarRow.selected{                               /*If selected than change bg-color of sidebarRow to red*/   
+    background-color: lightgray;
+    color: black;
+}
+
+.sidebarRow.selected > .sidebarRow__icon {          /*If selected than change color of icon to red*/
+    color: red;
+}
+
+.sidebarRow.selected > .sidebarRow__title {          /*If selected than change color of icon to red*/
+    font-weight: bold;
+}

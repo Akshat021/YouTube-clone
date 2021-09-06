@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 100;  /*So that nothing can go underneth the header */
+    background-color: white;
+    /* margin-top: 10px; */
+}
+
+.header__logo{
+    height: 25px;
+    object-fit:  contain;
+    margin-left: 20px;
+}
+
+.inactive{
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+}
+
+.header__input{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+.header__input > input:focus{
+    outline-width: 0;
+}
+
+.header__left{
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+.header__inputButton{
+    width: 50px  !important;
+    /* font-size: 10px !important; */
+    /* background-color: red; */
+    /* border-left: 1px solid lightgray; */
+    color: gray;
+    height: 20px !important;
+    padding-top: 5px;
+}
+
+.header__icons{
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+}
+.header__icon{
+    margin-right: 23px;
+}
+
+.header__input > input{         /* targeting input right inside the header__input */
+    flex: 1;                    /* since width is 40%, sTake maximum room available */
+    border : none;
+}

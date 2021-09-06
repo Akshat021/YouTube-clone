@@ -1,0 +1,23 @@
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    flex: 0.85;
+}
+
+.bubble__element{
+    font-size: 16px;
+    padding : 5px 15px;
+    font-weight: 400;
+    background-color: #f6f6f6;
+    border: lightgray solid 1px;
+    border-radius: 20px;
+}
+
+.selected{
+    color: white;
+    background-color: black;
+}
